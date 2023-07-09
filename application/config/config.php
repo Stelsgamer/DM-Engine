@@ -1,0 +1,1 @@
+<?php return ["admin_email" => "bezruchkoarseniy@gmail.com","sitename" => "engine","domain" => "engine.ru","about" => "","keywords" => "","dbhost" => "localhost","dbuser" => "root","dbpass" => "root","dbname" => "database","dbpref" => "dme","email-method" => "on","send-email" => "","reply-email" => "","smtp-host" => "","smtp-port" => "","smtp-pass" => "",'dev'=>0, ];
