@@ -58,11 +58,6 @@ return [
     'controller' => 'admin',
     'action' => 'settings'
   ],
-
-  'admin/asdasdasdasd' => [
-    'controller' => 'admin',
-    'action' => 'asdasdasd'
-  ],
 //--[/ADMIN]
 
 
