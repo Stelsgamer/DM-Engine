@@ -1,12 +1,5 @@
  <!-- Почтовые заготовки будут храниться в отдельных файлах -->
  <form action="/admin/email/" spellcheck="false" method="post" class="">
-    
-    <!-- info -->
-    <div id="info">
-      <div class="border-l-4 mt-3 border-red pt-2 pb-3 pl-3 sm:w-4/5 md:w-2/3 xl:w-1/2 rounded-r-sm shadow-md">
-        <p class="mt-1 text-sm self-center leading-6 pr-1">Ошибка: произошла ошибка при обновлении конфигурации. Проверьте права доступа<br>на чтение/запись файлов конфигурации 'application/config/config.php'</p>
-      </div>
-    </div>
     <!-- end info -->
     <div class="border-l-4 mt-3 border-blue pt-2 pb-3 pl-3 md:w-full lg:w-2/3 xl:w-1/2 rounded-r-sm shadow-md">
       <p class="mt-1 text-sm self-center leading-6 pr-1">Вы можете использовать html разметку и следующие теги для подстановки данных в письма:<ul class="text-sm"><li>{content} - важный тег с данными (должен использоваться для каждого письма)</li><li>{email-to} - email получателя</li><li>{email-reply} - email для обратной связи</li><li>{time} - время отправления</li><li>{site} - имя сайта отправителя</li></ul><br>Если вы оставите поля пустыми, то будут отправляться сообщения по умолчанию</p>
@@ -17,7 +10,7 @@
         <div class="col-span-6">
           <label for="email_confirm" class="block text-sm font-medium leading-6 ">Подтверждение регистрации / Registration confirm:</label>
           <div class="mt-2">
-            <textarea id="email_confirm" name="email_confirm" rows="8" class="input w-full border-text bg-input"><?php echo $e_confirm ?></textarea>
+            <textarea id="email_confirm" name="email_confirm" rows="5" class="input w-full border-text bg-input"><?php echo $e_confirm ?></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 font-thin text-desc">Это письмо получит пользователь при регистрации на сайте</p>
         </div>
@@ -25,7 +18,7 @@
         <div class="col-span-6">
           <label for="email_recovery" class="block text-sm font-medium leading-6 ">Восстановление пароля / Password recovery:</label>
           <div class="mt-2">
-            <textarea id="email_recovery" name="email_recovery" rows="8" class="input w-full border-text bg-input"><?php echo $e_recovery ?></textarea>
+            <textarea id="email_recovery" name="email_recovery" rows="5" class="input w-full border-text bg-input"><?php echo $e_recovery ?></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 font-thin text-desc">Это письмо получит пользователь при восстановлении пароля от учётной записи на сайте</p>
         </div>
@@ -33,7 +26,7 @@
         <div class="col-span-6">
           <label for="email_request" class="block text-sm font-medium leading-6 ">Ответ администрации / Administration request:</label>
           <div class="mt-2">
-            <textarea id="email_request" name="email_request" rows="8" class="input w-full border-text bg-input"><?php echo $e_request ?></textarea>
+            <textarea id="email_request" name="email_request" rows="5" class="input w-full border-text bg-input"><?php echo $e_request ?></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 font-thin text-desc">Это письмо получит пользователь, если им придёт личное сообщение от администрации сайта</p>
         </div>
@@ -41,7 +34,7 @@
         <div class="col-span-6">
           <label for="email_banned" class="block text-sm font-medium leading-6">Блокировка / Banned:</label>
           <div class="mt-2">
-            <textarea id="email_banned" name="email_banned" rows="8" class="input w-full border-text bg-input"><?php echo $e_banned ?></textarea>
+            <textarea id="email_banned" name="email_banned" rows="5" class="input w-full border-text bg-input"><?php echo $e_banned ?></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 font-thin text-desc">Это письмо получит пользователь, если его заблокируют в системе</p>
         </div>
@@ -59,4 +52,4 @@
     </div>
   </form> 
 
-  <script src="/public/scripts/form.js" defer></script>
+  

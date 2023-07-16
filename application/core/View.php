@@ -48,16 +48,12 @@ class View
     }
   }
 
-  public function message($type, $text,  $delay = 3) {
-    exit(json_encode(['type'=> $type, 'text' => $text, 'delay' => $delay]));
-  }
-
   public function error($text, $field, $delay = 3)
   {
     exit(json_encode(['error'=>true, 'text' => $text, 'field' => $field, 'delay' => $delay]));
   }
 
-  public function alert($type='message', $text)
+  public function alert($text, $type = 'message')
   {
     exit(json_encode([$type, 'text' => $text]));
   }

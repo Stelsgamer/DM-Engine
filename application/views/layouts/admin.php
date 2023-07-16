@@ -184,7 +184,9 @@
     <header class="font-semibold text-3xl mt-36 md:mt-0 py-3"> <!-- Title -->
       <p><?php echo $title?></p>
     </header>
-
+    <!-- info -->
+    <div id="info">
+    </div>
     <?php echo $content ?>
 
     <!-- footer(Да, нарушили вёрстку, но да пофиг(типо находимся в section)) -->
@@ -224,5 +226,6 @@
 <!-- end main section -->
   <script src="/public/scripts/jquery.js"></script>
   <script src="/public/scripts/panel.js"></script>
+  <script src="/public/scripts/form.js" defer></script>
 </body>
 </html>
