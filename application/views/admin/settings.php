@@ -11,7 +11,7 @@
 
           <div class="col-span-6 md:col-span-4">
             <label for="sitename"
-              class="block text-sm font-medium leading-6  ">Название
+              class="block text-sm font-medium leading-6">Название
               сайта / Site name:</label>
             <div class="mt-2">
               <div class="flex md:max-w-md">

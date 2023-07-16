@@ -28,10 +28,7 @@ $(window). on("load", function() {
 			cache: false,
 			processData: false,
 			success: function(result) {
-				json = jQuery.parseJSON(result);
-				if (json.url) {
-					window.location.href = '/' + json.url;
-				} else {
+                json = jQuery.parseJSON(result);
 					$('#info').html(`<div class="border-l-4 border-${json.color} py-3 px-3 rounded-r-sm shadow-md">
                     <p class="text-white text-xl">${json.message}</p>
                   </div>`);
@@ -39,8 +36,7 @@ $(window). on("load", function() {
                     top: 0,
                     left: 0,
                     behavior: 'smooth'
-                });
-				}
+                  });
 			},
 		});
 	});

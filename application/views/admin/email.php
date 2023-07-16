@@ -17,7 +17,7 @@
         <div class="col-span-6">
           <label for="email_confirm" class="block text-sm font-medium leading-6 ">Подтверждение регистрации / Registration confirm:</label>
           <div class="mt-2">
-            <textarea id="email_confirm" name="email_confirm" rows="10" class="input w-full border-text bg-input"><?php echo $e_confirm ?></textarea>
+            <textarea id="email_confirm" name="email_confirm" rows="8" class="input w-full border-text bg-input"><?php echo $e_confirm ?></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 font-thin text-desc">Это письмо получит пользователь при регистрации на сайте</p>
         </div>
@@ -25,7 +25,7 @@
         <div class="col-span-6">
           <label for="email_recovery" class="block text-sm font-medium leading-6 ">Восстановление пароля / Password recovery:</label>
           <div class="mt-2">
-            <textarea id="email_recovery" name="email_recovery" rows="10" class="input w-full border-text bg-input"><?php echo $e_recovery ?></textarea>
+            <textarea id="email_recovery" name="email_recovery" rows="8" class="input w-full border-text bg-input"><?php echo $e_recovery ?></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 font-thin text-desc">Это письмо получит пользователь при восстановлении пароля от учётной записи на сайте</p>
         </div>
@@ -33,7 +33,7 @@
         <div class="col-span-6">
           <label for="email_request" class="block text-sm font-medium leading-6 ">Ответ администрации / Administration request:</label>
           <div class="mt-2">
-            <textarea id="email_request" name="email_request" rows="10" class="input w-full border-text bg-input"><?php echo $e_request ?></textarea>
+            <textarea id="email_request" name="email_request" rows="8" class="input w-full border-text bg-input"><?php echo $e_request ?></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 font-thin text-desc">Это письмо получит пользователь, если им придёт личное сообщение от администрации сайта</p>
         </div>
@@ -41,7 +41,7 @@
         <div class="col-span-6">
           <label for="email_banned" class="block text-sm font-medium leading-6">Блокировка / Banned:</label>
           <div class="mt-2">
-            <textarea id="email_banned" name="email_banned" rows="10" class="input w-full border-text bg-input"><?php echo $e_banned ?></textarea>
+            <textarea id="email_banned" name="email_banned" rows="8" class="input w-full border-text bg-input"><?php echo $e_banned ?></textarea>
           </div>
           <p class="mt-3 text-sm leading-6 font-thin text-desc">Это письмо получит пользователь, если его заблокируют в системе</p>
         </div>
@@ -55,8 +55,8 @@
               изменения</button>
           </div>
         </div>
-  
       </div>
     </div>
-  </form>
+  </form> 
+
   <script src="/public/scripts/form.js" defer></script>
