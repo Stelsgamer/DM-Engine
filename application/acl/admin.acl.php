@@ -6,7 +6,8 @@ return [
         'login',
         'logout',
         'settings',
-        'email'
+        'email',
+        'acl'
 
     ],
     'authorize' => [

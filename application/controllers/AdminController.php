@@ -24,6 +24,10 @@ class AdminController extends Controller
   public function emailAction() {
     $this->view->render('Изменение почтовых рассылок');
   }
+  public function aclAction()
+  {
+    $this->view->render('Изменение почтовых рассылок');
+  }
 
 /* Получаем весь массив, а потом создаём его заново.
 Например, чтобы удалить, мы получаем весь массив из файла и запписываем в отдельную переменную. 

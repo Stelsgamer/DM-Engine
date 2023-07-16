@@ -63,6 +63,11 @@ return [
     'controller' => 'admin',
     'action' => 'settings'
   ],
+
+  'admin/acl' => [
+    'controller' => 'admin',
+    'action' => 'acl'
+  ],
 //--[/ADMIN]
 
 
