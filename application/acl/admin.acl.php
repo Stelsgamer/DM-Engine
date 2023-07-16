@@ -5,7 +5,8 @@ return [
         'index',
         'login',
         'logout',
-        'settings'
+        'settings',
+        'email'
 
     ],
     'authorize' => [

@@ -12,7 +12,11 @@ class Db
 
     public function __construct(){
         $config = $GLOBALS['config'];
-        $this->db = new PDO('mysql:host='.$config['dbhost'].';dbname='.$config['dbname'], $config['user'], $config['password']);
+        try{
+            $this->db = new PDO('mysql:host=' . $config['dbhost'] . ';dbname=' . $config['dbname'], $config['dbuser'], $config['dbpass']);
+        } catch (PDOException $Exception) {
+            throw new Exception("Ошибка в подключении к базе данных!!! Error occurupted with connect to database");
+        }
     }
 
     public function query($sql, $params = []) {

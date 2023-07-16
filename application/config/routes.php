@@ -54,6 +54,11 @@ return [
     'action' => 'index',
   ],
 
+  'admin/email' => [
+    'controller' => 'admin',
+    'action' => 'email',
+  ],
+
   'admin/settings' => [
     'controller' => 'admin',
     'action' => 'settings'
