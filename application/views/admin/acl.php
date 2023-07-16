@@ -111,3 +111,5 @@
       </div>
     </div>
   </div>
+</div>
+<script src="/public/scripts/panel.acl.js" defer></script>
