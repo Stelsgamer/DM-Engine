@@ -22,7 +22,16 @@ class AdminController extends Controller
   }
 
   public function emailAction() {
-    $this->view->render('Изменение почтовых рассылок');
+    if (!empty($_POST)) {
+      $this->view->alert("Сообщение:", "сохранено");
+    }
+
+    $e_confirm = file_get_contents("./application/config/mails/email_confirm.html") or "Не удалось получить данные";
+    $e_recovery = file_get_contents("./application/config/mails/email_recovery.html") or "Не удалось получить данные";
+    $e_request = file_get_contents("./application/config/mails/email_request.html") or "Не удалось получить данные";
+    $e_banned = file_get_contents("./application/config/mails/email_banned.html") or "Не удалось получить данные";
+    $this->view->render('Изменение почтовых рассылок', ["e_confirm" => $e_confirm, "e_recovery" => $e_recovery, "e_request" => $e_request, "e_banned" => $e_banned]);
+
   }
   public function aclAction()
   {

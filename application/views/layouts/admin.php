@@ -12,7 +12,7 @@
 <!-- start sidebar -->
 
   <section class="px-5 py-3 w-full md:max-w-[280px] fixed bg-gray-800 md:min-h-screen md:shadow-lg md:shadow-gray-700 text-sm font-semibold">
-    <nav class="flex py-3 justify-between items-center"><a href="#" class="w-full md:justify-normal"><div class="flex py-2 justify-center rounded-md w-full items-center text-blue hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-lg hover:shadow-gray-900 transition"><img src="/public/images/logo.svg" class="w-12" alt="Deepmind logo"><span class="pl-3 font-semibold text-3xl">DME l Panel</span></div></a>
+    <nav class="flex py-3 justify-between items-center"><a href="/admin/" class="w-full md:justify-normal"><div class="flex py-2 justify-center rounded-md w-full items-center text-blue hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-lg hover:shadow-gray-900 transition"><img src="/public/images/logo.svg" class="w-12" alt="Deepmind logo"><span class="pl-3 font-semibold text-3xl">DME l Panel</span></div></a>
       <button id="openSidebar" class="p-3 md:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="" width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>

@@ -1,4 +1,4 @@
-<form action="#" method="post" class="">
+<form action="#" method="post" spellcheck="false" class="">
       <div id="info">
         <div class="border-l-4 mt-3 border-green pt-2 pb-3 pl-3 sm:w-4/5 md:w-2/3 xl:w-1/2 rounded-r-sm shadow-md">
           <p class="mt-1 text-sm self-center leading-6 pr-1">Новые данные успешно применены!</p>
