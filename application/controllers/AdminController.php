@@ -58,7 +58,14 @@ class AdminController extends Controller
   }
   public function aclAction()
   {
-    $this->view->render('Изменение почтовых рассылок');
+    if (!empty($_POST)) {
+      if ($_POST['action'] == 'getActions') {
+        $json = file_get_contents('application/config/schema.json');
+        $jsonArray = json_decode($json, true);
+        die(json_encode($jsonArray[$_POST['controller'] . "Controller"]));
+      }
+    }
+    $this->view->render('Изменение контроля доступа');
   }
 
 /* Получаем весь массив, а потом создаём его заново.

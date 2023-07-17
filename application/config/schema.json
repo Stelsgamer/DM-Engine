@@ -1,0 +1,42 @@
+{
+  "adminController": {
+    "acl": {
+      "all": [
+        "index",
+        "login",
+        "settings",
+        "logout"
+      ],
+      "authorize": [],
+      "guest": [],
+      "admin": []
+    }
+  },
+  "accountController": {
+    "acl": {
+      "all": [],
+      "authorize": [
+        "index",
+        "logout",
+        "confirm"
+      ],
+      "guest": [
+        "login",
+        "registration"
+      ],
+      "admin": []
+    }
+  },
+  "mainController": {
+    "acl": {
+      "all": [
+        "privacy",
+        "rules",
+        "index"
+      ],
+      "authorize": [],
+      "guest": [],
+      "admin": []
+    }
+  }
+}

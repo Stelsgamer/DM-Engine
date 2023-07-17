@@ -44,7 +44,7 @@
       <div name="acl" class="space-y-4 px-3 py-2 rounded-sm">
         <div class="">
           <label for="acl_all" class="absolute ml-7 text-sm font-medium leading-6 text-text">Всем пользователи:</label>
-          <div class="border-x pt-5 border-blue rounded-md py-3 px-6 space-y-2 select-none shadow-md" id="acl_all"
+          <div class="border-x pt-7 border-blue rounded-md py-3 px-6 space-y-2 select-none shadow-md" id="acl_all"
             ondragover="onDragOver(event);" ondrop="onDrop(event);">
             <!-- users -->
             <div class="border hidden only:block rounded-md p-1 border-[inherit] px-6 text-desc bg-gray-800">Поместите
