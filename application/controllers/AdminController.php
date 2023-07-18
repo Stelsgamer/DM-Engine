@@ -24,7 +24,7 @@ class AdminController extends Controller
 
       $config_data = "<?php return [";
       foreach ($edit as $key => $val) {
-        $config_data .= '"' . $key . '" => "' . $val . '",';
+        $config_data .= '"' . $key . '" => "' . htmlspecialchars($val, ENT_QUOTES) . '",';
       }
       $config_data .= "];";
       if (file_put_contents("application/config/config.php", $config_data)) {
@@ -33,7 +33,7 @@ class AdminController extends Controller
         $this->view->alert("Ошибка: произошла ошибка при обновлении конфигурации. Проверьте права доступа < br > на чтение / запись файлов конфигурации 'application/config/config.php'", "error");
       }
     }
-    $this->view->render('Изменение настроек движка', ['sitename' => $config['sitename'], 'domain' => $config['domain'], 'about' => $config['about'], 'keywords' => $config['keywords']]);
+    $this->view->render('Изменение настроек движка', ['sitename' => htmlspecialchars_decode($config['sitename']), 'domain' => htmlspecialchars_decode($config['domain']), 'about' => htmlspecialchars_decode($config['about']), 'keywords' => htmlspecialchars_decode($config['keywords'])]);
   }
 
   public function emailAction() {

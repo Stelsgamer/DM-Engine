@@ -28,15 +28,21 @@ $(window). on("load", function() {
 			cache: false,
 			processData: false,
 			success: function(result) {
+                const info = $('#info');
                 json = jQuery.parseJSON(result);
-					$('#info').html(`<div class="border-l-4 border-${json.color} py-3 px-3 rounded-r-sm shadow-md">
+                info.html(`<div class="border-l-4 border-${json.color} py-3 px-3 rounded-r-sm shadow-md">
                     <p class="text-white text-xl">${json.message}</p>
                   </div>`);
-                  window.scrollTo({
+                window.scrollTo({ 
                     top: 0,
                     left: 0,
                     behavior: 'smooth'
                   });
+                setTimeout(function () {
+                    info.slideUp("slow", function () {
+                        info.html("")
+                    });
+                }, 3000);
 			},
 		});
 	});

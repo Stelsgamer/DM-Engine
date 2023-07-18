@@ -17,8 +17,6 @@ function renderActions(element){
       const data = jQuery.parseJSON(result).acl;
       console.log(data);
 
-
-
       acl_all.html(defMessage);
       acl_authorize.html(defMessage);
       acl_guest.html(defMessage);
@@ -48,7 +46,7 @@ function renderActions(element){
           acl_admin.append(`<div draggable="true" ondragstart="onDragStart(event);" id="${element}"class="border rounded-md p-1 border-[inherit] px-6">${element}</div>`);
         });
       }
-      $('.list').removeClass('list')
+      $('.list').removeClass('list');
 
     }
   })
