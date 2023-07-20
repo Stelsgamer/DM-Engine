@@ -1,3 +1,5 @@
 application/config/config.php
-index.php
+
 origin-index.php
+
+.gitignore
