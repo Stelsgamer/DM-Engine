@@ -229,7 +229,7 @@ $router->run();';
 
               <div class="col-span-6 sm:col-span-4">
                 <label for="domain"
-                  class="block text-sm font-medium leading-6  after:content-['*'] after:text-red after:ml-1">Домен сайта
+                  class="block text-sm font-medium leading-6 after:content-['*'] after:text-red after:ml-1">Домен сайта
                   / Site domain:</label>
                 <div class="mt-2">
                   <div class="flex sm:max-w-md">
@@ -237,7 +237,7 @@ $router->run();';
                       class="input order-last pl-0 border-l-0 border-text peer bg-input rounded-l-none invalid:border-red"
                       placeholder="example.com" required>
                     <span
-                      class="flex  rounded-l-md select-none items-center border-y border-l peer-valid:peer-focus:border-indigo peer-invalid:border-red pl-3 bg-input sm:text-sm">https://</span>
+                      class="flex rounded-l-md select-none border-text items-center border-y border-l peer-valid:peer-focus:border-indigo peer-invalid:border-red pl-3 bg-input sm:text-sm">https://</span>
                   </div>
                 </div>
               </div>
