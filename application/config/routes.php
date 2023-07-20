@@ -69,6 +69,26 @@ return [
     'action' => 'acl'
   ],
 //--[/ADMIN]
+//--[/API]
+  'api' => [
+    'controller' => 'api',
+    'action' => 'index',
+  ],
 
+  'api/email' => [
+    'controller' => 'api',
+    'action' => 'email',
+  ],
+
+  'api/settings' => [
+    'controller' => 'api',
+    'action' => 'settings'
+  ],
+
+  'api/acl' => [
+    'controller' => 'api',
+    'action' => 'acl'
+  ],
+//--[/API]
 
 ];

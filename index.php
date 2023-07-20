@@ -114,7 +114,7 @@ $router->run();';
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/public/styles/main.css" rel="stylesheet">
+  <link href="/public/styles/admin.css" rel="stylesheet">
   <link rel="shortcut icon" href="/public/images/logo.svg" type="image/x-icon">
   <title>Установка DM Engine</title>
   <link rel="prefetch prerender" href="/public/images/logo.svg" />

@@ -10,7 +10,8 @@
       "authorize": [],
       "guest": [],
       "admin": []
-    }
+    },
+    "description": "asdasdasd"
   },
   "accountController": {
     "acl": {
@@ -25,7 +26,8 @@
         "registration"
       ],
       "admin": []
-    }
+    },
+    "description": "asdasdasd"
   },
   "mainController": {
     "acl": {
@@ -37,6 +39,21 @@
       "authorize": [],
       "guest": [],
       "admin": []
-    }
+    },
+    "description": "asdasdasd"
+  },
+  "apiController": {
+    "acl": {
+      "all": [
+        "index",
+        "email",
+        "settings",
+        "acl"
+      ],
+      "authorize": [],
+      "guest": [],
+      "admin": []
+    },
+    "description": "asdasdasd"
   }
 }

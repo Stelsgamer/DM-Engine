@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $title?></title>
-  <link rel="stylesheet" href="/public/styles/output.css">
+  <link rel="stylesheet" href="/public/styles/admin.css">
   <link rel="shortcut icon" href="/public/images/logo.svg" type="image/x-icon">
 </head>
 <body class="min-h-screen w-full bg-main text-text md:flex">
