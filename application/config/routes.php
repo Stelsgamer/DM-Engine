@@ -68,7 +68,37 @@ return [
     'controller' => 'admin',
     'action' => 'acl'
   ],
-//--[/ADMIN]
 
+  'admin/controller' => [
+    'controller' => 'admin',
+    'action' => 'controller'
+  ],
+//--[/ADMIN]
+//--[/API]
+  'api' => [
+    'controller' => 'api',
+    'action' => 'index',
+  ],
+
+  'api/email' => [
+    'controller' => 'api',
+    'action' => 'email',
+  ],
+
+  'api/settings' => [
+    'controller' => 'api',
+    'action' => 'settings'
+  ],
+
+  'api/acl' => [
+    'controller' => 'api',
+    'action' => 'acl'
+  ],
+
+  'api/controller' => [
+    'controller' => 'api',
+    'action' => 'controller'
+  ],
+//--[/API]
 
 ];

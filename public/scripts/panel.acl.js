@@ -7,15 +7,13 @@ const select = $('#controllers_select');
 const defMessage = `<div class="border hidden only:block rounded-md p-1 border-[inherit] px-6 text-desc bg-gray-800">Поместите ваш action здесь...</div>`;
 
 function renderActions(element){
-
   $.ajax({
     type: 'post',
-    url: '/admin/acl/',
+    url: '/api/acl/',
     data: { "controller": element.value, "action": "getActions" },
     cache: false,
     success: function (result) {
       const data = jQuery.parseJSON(result).acl;
-      console.log(data);
 
       acl_all.html(defMessage);
       acl_authorize.html(defMessage);
@@ -50,10 +48,41 @@ function renderActions(element){
 
     }
   })
+}
 
+
+
+function getControllers(){
+  $.ajax({
+    type: 'post',
+    url: '/api/acl/',
+    data: {"action": "getControllers" },
+    cache: false,
+    success: function (result) {
+      const data = jQuery.parseJSON(result);
+      
+      if (data.length > 0) {
+        data.forEach(element => {
+          element = element.replace("Controller", "");
+          select.append(`<option value="${element}">${element}</option>`);
+        });
+        
+      }else{
+        select.html('<option value="none">Не найдено</option>');
+      }
+    }
+  })
+}
+
+$('update').on('click', function(event){
+  event.preventDefault();
+  select.html('<option value="none">Обновление...</option>')
+  getControllers();
+})
+
+getControllers();
 
 
 
 
   
-}

@@ -1,5 +1,5 @@
  <!-- Почтовые заготовки будут храниться в отдельных файлах -->
- <form action="/admin/email/" spellcheck="false" method="post" class="">
+ <form action="/api/email/" spellcheck="false" method="post" class="">
     <!-- end info -->
     <div class="border-l-4 mt-3 border-blue pt-2 pb-3 pl-3 md:w-full lg:w-2/3 xl:w-1/2 rounded-r-sm shadow-md">
       <p class="mt-1 text-sm self-center leading-6 pr-1">Вы можете использовать html разметку и следующие теги для подстановки данных в письма:<ul class="text-sm"><li>{content} - важный тег с данными (должен использоваться для каждого письма)</li><li>{email-to} - email получателя</li><li>{email-reply} - email для обратной связи</li><li>{time} - время отправления</li><li>{site} - имя сайта отправителя</li></ul><br>Если вы оставите поля пустыми, то будут отправляться сообщения по умолчанию</p>

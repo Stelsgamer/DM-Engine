@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo $title?></title>
-  <link rel="stylesheet" href="/public/styles/output.css">
+  <link rel="stylesheet" href="/public/styles/admin.css">
   <link rel="shortcut icon" href="/public/images/logo.svg" type="image/x-icon">
 </head>
 <body class="min-h-screen w-full bg-main text-text md:flex">
 
 <!-- start sidebar -->
 
-  <section class="px-5 py-3 w-full md:max-w-[280px] fixed bg-gray-800 md:min-h-screen md:shadow-lg md:shadow-gray-700 text-sm font-semibold">
+  <section class="px-5 py-3 w-full md:max-w-[280px] z-10 fixed bg-gray-800 md:min-h-screen md:shadow-lg md:shadow-gray-700 text-sm font-semibold">
     <nav class="flex py-3 justify-between items-center"><a href="/admin/" class="w-full md:justify-normal"><div class="flex py-2 justify-center rounded-md w-full items-center text-blue hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-lg hover:shadow-gray-900 transition"><img src="/public/images/logo.svg" class="w-12" alt="Deepmind logo"><span class="pl-3 font-semibold text-3xl">DME l Panel</span></div></a>
       <button id="openSidebar" class="p-3 md:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="" width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
@@ -60,7 +60,7 @@
           </div>
         </nav>  
         <nav class="flex justify-between">
-          <a class="nav-link flex items-center" href="#">
+          <a class="nav-link flex items-center <?php if ($this->route['action'] == 'controller')echo 'active' ?>" href="/admin/controller/">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M5.122 21c.378.378.88.586 1.414.586S7.572 21.378 7.95 21l4.336-4.336a7.495 7.495 0 0 0 2.217.333 7.446 7.446 0 0 0 5.302-2.195 7.484 7.484 0 0 0 1.632-8.158l-.57-1.388-4.244 4.243-2.121-2.122 4.243-4.243-1.389-.571A7.478 7.478 0 0 0 14.499 2c-2.003 0-3.886.78-5.301 2.196a7.479 7.479 0 0 0-1.862 7.518L3 16.05a2.001 2.001 0 0 0 0 2.828L5.122 21zm4.548-8.791-.254-.616a5.486 5.486 0 0 1 1.196-5.983 5.46 5.46 0 0 1 4.413-1.585l-3.353 3.353 4.949 4.95 3.355-3.355a5.49 5.49 0 0 1-1.587 4.416c-1.55 1.55-3.964 2.027-5.984 1.196l-.615-.255-5.254 5.256h.001l-.001 1v-1l-2.122-2.122 5.256-5.255z">

@@ -1,5 +1,6 @@
 {
   "adminController": {
+    "editable": false,
     "acl": {
       "all": [
         "index",
@@ -10,7 +11,9 @@
       "authorize": [],
       "guest": [],
       "admin": []
-    }
+    },
+    "category": "asdasd",
+    "description": "asdasdasd"
   },
   "accountController": {
     "acl": {
@@ -25,7 +28,9 @@
         "registration"
       ],
       "admin": []
-    }
+    },
+    "category": "asdasd",
+    "description": "asdasdasd"
   },
   "mainController": {
     "acl": {
@@ -37,6 +42,24 @@
       "authorize": [],
       "guest": [],
       "admin": []
-    }
+    },
+    "category": "asdasd",
+    "description": "asdasdasd"
+  },
+  "apiController": {
+    "editable": false,
+    "acl": {
+      "all": [
+        "index",
+        "email",
+        "settings",
+        "acl"
+      ],
+      "authorize": [],
+      "guest": [],
+      "admin": []
+    },
+    "category": "asdasd",
+    "description": "asdasdasd"
   }
 }

@@ -1,4 +1,4 @@
-<form action="#" method="post" spellcheck="false" class="">
+<form action="/api/settings/" method="post" spellcheck="false" class="">
   <div class="w-full lg:w-2/3 xl:w-1/2">
     <div class="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-6">
 

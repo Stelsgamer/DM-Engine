@@ -17,11 +17,12 @@
   <p class="mt-1 text-sm self-center leading-6 pr-1">Внимание, при изменении параметров через интерфейс панели возможна
     перезапись индивидуальных донастроек! Рекомндуется сделать резервную копию данных</p>
 </div>
+
 <div id="info">
-  <div class="border-l-4 mt-3 border-red pt-2 pb-3 pl-3 sm:w-4/5 md:w-2/3 xl:w-1/2 rounded-r-sm shadow-md">
+  <!-- <div class="border-l-4 mt-3 border-red pt-2 pb-3 pl-3 sm:w-4/5 md:w-2/3 xl:w-1/2 rounded-r-sm shadow-md">
     <p class="mt-1 text-sm self-center leading-6 pr-1">Ошибка: произошла ошибка при обновлении конфигурации. Проверьте
       права доступа<br>на чтение/запись файлов конфигурации ACL 'application/acl/{controller}.acl.php'</p>
-  </div>
+  </div> -->
 </div>
 <!-- end info -->
 
@@ -29,21 +30,19 @@
   <div class="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-6">
     <div class="col-span-6 md:col-span-4">
       <!-- controller's list -->
-      <label class="block text-sm font-medium leading-6 baseline" for="controllers">Контролер / Controller:</label>
-      <select class="bg-input min-w-min border-blue focus:border-blue rounded-md" onchange="renderActions(this);"
+      <label class="block text-sm font-medium leading-6 baseline" for="controllers_select">Контролер / Controller: <a href="#" class="nav-link ml-3" id="update">Обновить</a></label>
+      <select class="bg-input min-w-min border-blue mt-2 focus:border-blue rounded-md" onchange="renderActions(this);"
         id="controllers_select">
         <option class="hidden" selected>Выберите / choose</option>
-        <option value="main">main</option>
-        <option value="admin">admin</option>
-        <option value="account">account</option>
       </select>
     </div>
 
     <div class="list col-span-6 md:col-span-4 ">
-      <label for="acl" class="block text-sm font-medium p-2 leading-6 baseline">Контроль доступа / ACL:</label>
-      <div name="acl" class="space-y-4 px-3 py-2 rounded-sm">
+      <span class="block text-sm font-medium p-2 leading-6 baseline">Контроль доступа / ACL:</span>
+      <div class="space-y-4 px-3 py-2 rounded-sm">
+        
         <div class="">
-          <label for="acl_all" class="absolute ml-7 text-sm font-medium leading-6 text-text">Всем пользователи:</label>
+          <span class="absolute ml-7 text-sm font-medium leading-6 text-text">Всем пользователи:</span>
           <div class="border-x pt-7 border-blue rounded-md py-3 px-6 space-y-2 select-none shadow-md" id="acl_all"
             ondragover="onDragOver(event);" ondrop="onDrop(event);">
             <!-- users -->
@@ -53,8 +52,8 @@
         </div>
 
         <div class="">
-          <label for="acl_authorize" class="absolute ml-7 text-sm font-medium leading-6 text-text">Авторизированные
-            пользователи:</label>
+          <span class="absolute ml-7 text-sm font-medium leading-6 text-text">Авторизированные
+            пользователи:</span>
           <div class="border-x pt-7 border-green rounded-md py-3 px-6 space-y-2 select-none shadow-md"
             id="acl_authorize" ondragover="onDragOver(event);" ondrop="onDrop(event);"
             ondragenter="onDragEnter(event);">
@@ -65,8 +64,8 @@
         </div>
 
         <div class="">
-          <label for="acl_guest" class="absolute ml-7 text-sm font-medium leading-6 text-text">Неавторизированные
-            пользователи:</label>
+          <span class="absolute ml-7 text-sm font-medium leading-6 text-text">Неавторизированные
+            пользователи:</span>
           <div class="border-x pt-7 border-yellow rounded-md py-3 px-6 space-y-2 select-none shadow-md" id="acl_guest"
             ondragover="onDragOver(event);" ondrop="onDrop(event);" ondragenter="onDragEnter(event);">
             <!-- guests -->
@@ -76,8 +75,8 @@
         </div>
 
         <div class="">
-          <label for="acl_admin" class="absolute ml-7 text-sm font-medium leading-6 text-text">Администраторы
-            сисемы:</label>
+          <span class="absolute ml-7 text-sm font-medium leading-6 text-text">Администраторы
+            сисемы:</span>
           <div class="border-x pt-7 border-red rounded-md py-3 px-6 space-y-2 select-none shadow-md" id="acl_admin"
             ondragover="onDragOver(event);" ondrop="onDrop(event);" ondragenter="onDragEnter(event);">
             <!-- admin -->
