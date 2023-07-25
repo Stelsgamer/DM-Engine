@@ -12,10 +12,8 @@
       "guest": [],
       "admin": []
     },
-<<<<<<< HEAD
+
     "category": "asdasd",
-=======
->>>>>>> 91540ff6c7668c5ccddd6c751fb31ae1ad20df64
     "description": "asdasdasd"
   },
   "accountController": {
@@ -32,10 +30,8 @@
       ],
       "admin": []
     },
-<<<<<<< HEAD
+
     "category": "asdasd",
-=======
->>>>>>> 91540ff6c7668c5ccddd6c751fb31ae1ad20df64
     "description": "asdasdasd"
   },
   "mainController": {
@@ -49,17 +45,11 @@
       "guest": [],
       "admin": []
     },
-<<<<<<< HEAD
     "category": "asdasd",
     "description": "asdasdasd"
   },
   "apiController": {
     "editable": false,
-=======
-    "description": "asdasdasd"
-  },
-  "apiController": {
->>>>>>> 91540ff6c7668c5ccddd6c751fb31ae1ad20df64
     "acl": {
       "all": [
         "index",
@@ -71,10 +61,7 @@
       "guest": [],
       "admin": []
     },
-<<<<<<< HEAD
     "category": "asdasd",
-=======
->>>>>>> 91540ff6c7668c5ccddd6c751fb31ae1ad20df64
     "description": "asdasdasd"
   }
 }
