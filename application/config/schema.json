@@ -1,6 +1,5 @@
 {
   "adminController": {
-    "editable": false,
     "acl": {
       "all": [
         "index",
@@ -12,7 +11,6 @@
       "guest": [],
       "admin": []
     },
-
     "category": "asdasd",
     "description": "asdasdasd"
   },
@@ -30,7 +28,6 @@
       ],
       "admin": []
     },
-
     "category": "asdasd",
     "description": "asdasdasd"
   },
@@ -49,7 +46,6 @@
     "description": "asdasdasd"
   },
   "apiController": {
-    "editable": false,
     "acl": {
       "all": [
         "index",

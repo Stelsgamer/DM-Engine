@@ -1,7 +1,7 @@
 <?php
 
 return [
-  //--[MAIN]
+//--[MAIN]
   '' => [
     'controller' => 'main',
     'action' => 'index',
@@ -16,7 +16,7 @@ return [
     'controller' => 'main',
     'action' => 'rules',
   ],
-  //--[/MAIN]
+//--[/MAIN]
 //--[ACCOUNT]
   'account' => [
     'controller' => 'account',
@@ -47,7 +47,7 @@ return [
     'controller' => 'account',
     'action' => 'logout',
   ],
-  //--[/ACCOUNT]
+//--[/ACCOUNT]
 //--[ADMIN]
   'admin' => [
     'controller' => 'admin',
@@ -73,7 +73,32 @@ return [
     'controller' => 'admin',
     'action' => 'controller'
   ],
-  //--[/ADMIN]
+//--[/ADMIN]
+//--[/API]
+  'api' => [
+    'controller' => 'api',
+    'action' => 'index',
+  ],
 
+  'api/email' => [
+    'controller' => 'api',
+    'action' => 'email',
+  ],
+
+  'api/settings' => [
+    'controller' => 'api',
+    'action' => 'settings'
+  ],
+
+  'api/acl' => [
+    'controller' => 'api',
+    'action' => 'acl'
+  ],
+
+  'api/controller' => [
+    'controller' => 'api',
+    'action' => 'controller'
+  ],
+//--[/API]
 
 ];

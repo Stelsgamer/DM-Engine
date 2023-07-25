@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,16 +8,4 @@
 <body>
   <h1>API service deepmind engine</h1>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>API service deepmind engine</h1>
-</body>
->>>>>>> 91540ff6c7668c5ccddd6c751fb31ae1ad20df64
 </html>
