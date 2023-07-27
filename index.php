@@ -229,17 +229,17 @@ $router->run();';
                 </div>
               </div>
 
-              <div class="col-span-6 sm:col-span-4">
-                <label for="domain"
-                  class="block text-sm font-medium leading-6 after:content-['*'] after:text-red after:ml-1">Домен сайта
+              <div class="col-span-6 md:col-span-4">
+                <label for="domain" class="block text-sm font-medium leading-6">Домен
+                  сайта
                   / Site domain:</label>
                 <div class="mt-2">
-                  <div class="flex sm:max-w-md">
+                  <div class="flex md:max-w-md relative">
                     <input type="text" name="domain" id="domain" autocomplete="none"
-                      class="input order-last pl-0 border-l-0 border-text peer bg-input rounded-l-none invalid:border-red"
-                      placeholder="example.com" required>
+                      class="input order-last pl-14 border-text bg-input invalid:border-red"
+                      value="$echo" placeholder="example.com" required>
                     <span
-                      class="flex rounded-l-md select-none border-text items-center border-y border-l peer-valid:peer-focus:border-indigo peer-invalid:border-red pl-3 bg-input sm:text-sm">https://</span>
+                      class="absolute left-0 top-2 select-none pl-3 sm:text-sm">https://</span>
                   </div>
                 </div>
               </div>
