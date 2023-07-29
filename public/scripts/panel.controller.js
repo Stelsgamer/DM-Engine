@@ -18,8 +18,7 @@
         cache: false,
         success: function (result) {
         const data = jQuery.parseJSON(result);
-        if (data) {
-          console.log(data)
+          if (data) {
             container.html(`
                 <div class="py-3 px-6">
                 <h2 class="text-3xl">Контроллер ${name}</h2>
@@ -207,8 +206,5 @@
 
 
 
-  
 
-  getControllers();
-  
 

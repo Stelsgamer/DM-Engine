@@ -30,6 +30,22 @@
               <td class="border-b-2 border-stroke hidden sm:table-cell">Категория</td>
               <td></td>
             </tr>
+            <?php foreach ($controllers as $name => $data): ?>
+              <tr>
+                <td>
+                  <?php echo stristr($data, 'Controller.php', true) ?>
+                </td>
+                <td class="hidden lg:table-cell">
+                  <?php echo $scheme[stristr($data, '.php', true)]['description'] ?>
+                </td>
+                <td class="hidden sm:table-cell">
+                  <?php echo $scheme[stristr($data, '.php', true)]['category'] ?>
+                </td>
+                <td><button onclick="getOneController(`<?php echo $scheme[stristr($data, '.php', true)] ?>`)"
+                    class="getinfobutton text-sm font-normal leading-6 px-8 bg-indigo text-text rounded-lg p-2 hover:bg-indigo/50 transition duration-200 hover:text-white">Выбрать</button>
+                </td>
+              </tr>
+            <?php endforeach; ?>
           </table>
           <script>
   

@@ -44,8 +44,9 @@ class AdminController extends Controller
 
   public function controllerAction()
   {
-
-    $this->view->render('Контроллеры');
+    $scheme = file_get_contents("./application/config/schema.json") or $this->view->alert("Ошибка: произошла ошибка при обновлении конфигурации. Проверьте права доступа < br > на чтение / запись файлов конфигурации 'application/config/mails/email_banned.php'", "error");
+    $controllers = array_diff(scandir('application/controllers'), array('..', '.'));
+    $this->view->render('Контроллеры', ["scheme" => json_decode($scheme, true), "controllers" => $controllers]);
   }
 
 /* Получаем весь массив, а потом создаём его заново.

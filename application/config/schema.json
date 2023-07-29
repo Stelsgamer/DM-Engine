@@ -1,5 +1,5 @@
 {
-  "adminController": {
+  "AdminController": {
     "acl": {
       "all": [
         "index",
@@ -14,7 +14,7 @@
     "category": "asdasd",
     "description": "asdasdasd"
   },
-  "accountController": {
+  "AccountController": {
     "acl": {
       "all": [],
       "authorize": [
@@ -31,7 +31,7 @@
     "category": "asdasd",
     "description": "asdasdasd"
   },
-  "mainController": {
+  "MainController": {
     "acl": {
       "all": [
         "privacy",
@@ -45,7 +45,7 @@
     "category": "asdasd",
     "description": "asdasdasd"
   },
-  "apiController": {
+  "ApiController": {
     "acl": {
       "all": [
         "index",
